@@ -13,7 +13,7 @@
 
         public function criar() {
             // Apenas carrega a view do formulário
-            require_once __DIR__ '/../views/produts/formulario.php';
+            require_once __DIR__ '/../views/produtos/formulario.php';
         }
 
         public function salvar() {
@@ -39,6 +39,9 @@
                 } else {
                     echo "Não foi possível cadastrar o produto";
                 }
+            } else {
+                header('Location: /index.php');
+                exit();
             }
         }
     }
