@@ -48,8 +48,21 @@
             }
         }
 
-        public function salvar(){
+        public function salvarProduto(){
+            try {
+                $sql = "INSERT INTO produtos (NOME, VALOR, ESTOQUE) VALUES (:nome, :valor, :estoque)";
+                $stmt = $this->conexao->prepare($sql);
 
+                $stmt->bindValue(':nome', $nome);
+                $stmt->bindValue(':valor', $valor);
+                $stmt->bindValue(':estoque', $estoque);
+
+                return $stmt->execute();
+            } catch (PDOException $e) {
+                error_log($e->getMessage());
+                die("Erro ao salvar produto: " . e->getMessage());
+                return false;
+            }
         }
 
         public function calcularValorFinal($quantidade) {
