@@ -1,0 +1,58 @@
+/* Parte da barra do carrosel imagem */
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Parte da barra de nagegação */
+.navbar {
+    background-color: #333;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.navbar li a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+}
