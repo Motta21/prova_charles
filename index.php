@@ -2,11 +2,12 @@
 <html lang="pt-br">
   <head>
     <title>CircuitByte</title>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="resources/assets/designbonito.css">   
+     <meta charset="utf-8">
   </head>
   <body>
 
-    <ul class="carrossel">
+    <ul class="slider">
     <li>
           <input type="radio" id="slide1" name="slide" checked>
           <label for="slide1"></label>
@@ -27,7 +28,7 @@
 
 </ul>
 
-  <nav class="barra_dados">
+  <nav class="navbar">
         <ul>
             <li><a href="#Home">Início</a></li>
             <li><a href="#Produtos">Sobre</a></li>
